@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecasting flow</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css')}}">
+    <!-- <link rel="stylesheet" href="/static/style.css"> -->
+</head>
+<body>
+    <header id="header">
+        <h1>Header Content</h1>
+        <!-- Other header content goes here -->
+    </header>
+    <div class="container">
+        <h1>Sales Forecasting File Manager</h1>
+        <form id="upload-form" enctype="multipart/form-data">
+            <label for="csv-file">Choose a CSV file:</label>
+            <input type="file" id="csv-file" name="csvfile" accept=".csv" required>
+            <button type="submit">forecast</button>
+        </form>
+    </div>
+
+    <footer id="footer">
+        <h1>Footer Content</h1>
+        <!-- Other footer content goes here -->
+    </footer>
+</body>
+</html>

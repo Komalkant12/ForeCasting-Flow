@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style_1.css')}}">
+    <title>ForecastingFlow</title> <!-- Changed the title to "ForecastingFlow" -->
+</head>
+<body>
+    <nav class="nav" id="header">
+        <!-- Content fetched from header.html will be inserted here -->
+        
+        <ul>
+            <!-- Uncomment the following line if you want to add a logo -->
+            <!-- <li class="item"><img src="" alt="logo"></li> -->
+            <li class="item" style="font-size: 25px; padding-top: -2%; font-weight: 800; color: green;">ForecastingFlow</li>
+            <!-- Changed the text from "Document" to "ForecastingFlow" -->
+            <li class="item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="item"><a href="{{url_for('dashboard')}}">About</a></li>
+            <li class="item"><a href="{{url_for('sales_input')}}">Sales Input</a></li>
+            <li class="item"><a href="{{url_for('upload_form')}}">Forecast</a></li>
+            {% if username %}
+                <li style="float:right; " class="item"><img src="" alt="logo" class="logo">{{ username }}!</li>
+                <li style="float:right; margin-right:20px;"><a href="{{ url_for('logout') }}">Logout</a></li>
+            {% else %}
+                <li style="float:right; " class="item"><a href="{{url_for('login')}}">Login</a></li>
+                <li style="float:right; margin-right:20px;" class="item"><a href="{{url_for('signup')}}">Signup</a></li>
+            {% endif %}
+            
+        </ul>
+    </nav>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    
+
+</body>
+</html>

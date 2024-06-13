@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style_1.css')}}">
+    <title>Forecasting flow</title>
+</head>
+<body class="body">
+    <div class="container">
+        <div class="img">
+            <img src="https://www.salesmate.io/blog/wp-content/uploads/2021/11/Sales-forecasting-what-is-it-and-how-to-do-it-effectively.jpg" alt="" >
+        </div>
+        <div class="login">
+            <h3>Sign Up</h3>
+        <form action="{{ url_for('signup_submit') }}" method="POST">
+            <input type="text" class="input" name="username" placeholder="Username">
+            <input type="text" class="input" name="email" placeholder="Email">
+            <input type="password" class="input" name="password" placeholder="Password">
+            <input type="submit" value="Sign Up" class="submit">
+            <center><p>Already a User <a href ="{{url_for('login')}}">Sign in</a></p></center>
+        </form>
+        </div>
+        
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

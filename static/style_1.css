@@ -1,0 +1,450 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Login Registration */
+
+.body {
+    background-image: url('https://media.licdn.com/dms/image/D4D12AQFIyrWbCU_FQg/article-cover_image-shrink_600_2000/0/1691955608696?e=2147483647&v=beta&t=qxUrHRE-YMli2dxSBHwOvGkgOIXDqkB2q24DyuC5iSc');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 60%;
+    height: 400px;
+    margin-left: 20%;
+    margin-top: 10%;
+    background-color: rgba(142, 129, 129, 0.5);
+    z-index: 5px;
+    backdrop-filter: blur(5px);
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    box-shadow: 5px 3px 7px black;
+}
+
+h3 {
+    text-align: center;
+    font-size: 35px;
+    color: #333;
+}
+
+.login {
+    width: 40%;
+    padding: 0px 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+    border: none;
+    /* border-bottom: 1px solid #0056b3; */
+    box-sizing: border-box;
+    font-size: 16px;
+    /* background-color: rgba(210, 205, 205, 0.938); */
+    float: left;
+}
+
+.login a {
+    text-decoration: none;
+    color: blue;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit:hover {
+    background-color: linear-gradient(45deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+
+/* .submit:focus {
+    outline: none;
+} */
+
+
+/*Navbar */
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(181, 215, 250);
+    color: black;
+    /* Text color */
+    padding: 10px 10px;
+    /* Padding around items */
+    box-shadow: 10px 7px 4px rgba(87, 73, 73, 0.698);
+    /* Box shadow for subtle depth */
+    z-index: 1000;
+    /* Ensure the navbar appears above other content */
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: black;
+}
+
+.item.logo {
+    margin-right: auto;
+}
+
+.item a {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Anta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 23px;
+    font-style: normal;
+}
+
+.item a:hover {
+    color: white;
+    /* Text color on hover */
+}
+
+
+/* caruosel */
+
+
+/* CSS for carousel */
+
+.carousel {
+    background: url('https://cdn.betterproposals.io/blog/2023/03/guide-to-sales-forecasting.png')center/cover no-repeat;
+    /* Dark background color */
+    position: relative;
+    width: 100%;
+    height: 700px;
+    box-shadow: 20px 10px 7px rgba(236, 232, 232, 0.5);
+    margin-top: 10px;
+}
+
+.carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 800px;
+    animation: slideUp 1s ease;
+}
+
+.p {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.6;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 15%;
+    font-family: "Anta", sans-serif;
+    font-style: normal;
+    color: black;
+}
+
+.domain {
+    padding-top: 5%;
+    padding-right: 5%;
+    color: rgb(66, 128, 9);
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* Dashboard styles */
+
+.Dashboard {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.Dashboard .image {
+    float: left;
+    width: 50%;
+    height: 300px;
+}
+
+.Dashboard .image img {
+    width: 500px;
+    height: auto;
+    margin-left: 100px;
+    border-radius: 30px;
+    box-shadow: 2px 4px 5px rgba(249, 247, 247, 0.5);
+}
+
+.Dashboard .content {
+    flex: 2;
+    padding-left: 60px;
+    margin-left: 30px;
+}
+
+p {
+    color: #1f1919;
+    font-weight: bold;
+    /* font-optical-sizing: auto; */
+    font-size: 20px;
+    font-style: normal;
+}
+
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 320px;
+    background-color: rgb(99, 165, 231);
+    color: black;
+    padding: 10px;
+    /* Added padding for better spacing */
+    position: relative;
+    margin-top: 50px;
+}
+
+.brand {
+    float: left;
+    width: 25%;
+    padding-right: 10%;
+    padding-bottom: -15%;
+    height: 70px;
+}
+
+.brands {
+    float: right;
+    width: 40%;
+    height: 50px;
+    padding-bottom: -15%;
+}
+
+.brand-line {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.foot {
+    color: #ccc;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    /* Removed text-decoration */
+}
+
+.footer h5 {
+    color: #060505;
+    text-align: center;
+    font-size: 36px;
+    /* Adjusted font size */
+    font-family: "Anta", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/* h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 50px; /* Adjusted font size 
+
+font-family: "Anta",
+sans-serif;
+font-weight: 600;
+padding-right: 15%;
+
+}
+*/
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    /* Adjusted font size */
+    font-family: "Anta", sans-serif;
+    font-weight: 600;
+    padding-right: 15%;
+}
+
+li {
+    font-weight: 900;
+    text-align: center;
+    color: #0d0b0b;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(10, 8, 8);
+}
+
+li a:hover {
+    color: rgb(100, 89, 89);
+}
+
+
+/* Sales Input */
+
+.main {
+    width: 60%;
+    height: 560px;
+    margin-left: 20%;
+    margin-top: 10%;
+    background-color: rgba(236, 232, 232, 0.5);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.image {
+    padding-top: 3%;
+    width: 50%;
+    height: 60%;
+    float: left;
+}
+
+.image img {
+    width: 90%;
+    height: 400px;
+}
+
+.sales {
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+
+.data {
+    width: 90%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 1px solid #0056b3;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.1);
+    float: left;
+}
+
+.sales h1 {
+    text-align: center;
+    color: #0a0a0a;
+    font-family: "Anta", sans-serif;
+    padding-top: 20px;
+}
+
+.button {
+    border: none;
+    background-color: rgb(39, 149, 164);
+    width: 100px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 150px;
+    border-radius: 5pc;
+}
+
+label {
+    color: #09090a;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px auto;
+    font-weight: 600;
+    font-size: 18px
+}
+
+
+/* Forecast */
+
+.container_1 {
+    width: 60%;
+    height: 400px;
+    margin-left: 20%;
+    margin-top: 10%;
+    background-color: rgba(236, 232, 232, 0.5);
+    /* border: 2px solid black; */
+    border-radius: 10px;
+}
+
+.img {
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+
+.file {
+    width: 40%;
+    padding: 10px 10px;
+    margin-top: 40px;
+    margin-left: 50px;
+    border: none;
+    border-bottom: 1px solid #0056b3;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.1);
+    float: left;
+}
+
+.img img {
+    width: 100%;
+    height: 400px;
+    /* margin-top: 70px;
+    margin-left: 60px; */
+}
+
+.h1 {
+    text-align: center;
+    color: #22085b;
+    font-family: "Anta", sans-serif;
+    padding-top: 50px;
+}
+
+.plot {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .nav ul li:last-child {
+        margin-bottom: 0;
+    }
+}

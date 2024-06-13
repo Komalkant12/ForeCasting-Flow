@@ -1,0 +1,347 @@
+/* Login Registration */
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4d4a4a;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 200px auto;
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 35px;
+    color: #333;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="button"]:focus {
+    outline: none;
+}
+
+
+/*Navbar */
+ 
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #1d1c1c; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px 10px; /* Padding around items */
+    box-shadow: 10px 7px 4px rgba(0, 0, 0, 0.5); /* Box shadow for subtle depth */
+    z-index: 1000; /* Ensure the navbar appears above other content */
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
+}
+
+.item.logo {
+    margin-right: auto; /* Push logo to the left */
+}
+
+.item a {
+    text-decoration: none;
+    color: inherit; /* Inherit text color */
+    font-family: "Anta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.item a:hover {
+    color: #ccc; /* Text color on hover */
+}
+
+.nav ul li a {
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.nav ul li a:hover {
+    color: #ccc; /* Text color on hover */
+}
+
+/* caruosel */
+/* CSS for carousel */
+.carousel {
+    background: url('https://www.entrepreneurshipinabox.com/wp-content/uploads/sales-forecast-template-for-your-business.jpg')center/cover no-repeat; /* Dark background color */
+    position: relative;
+    width: 100%;
+    height: 700px; /* Adjust the height as needed */
+    box-shadow: 20px 10px 7px rgba(236, 232, 232, 0.5);
+    margin-top: 50px;
+    border-radius: 3px;
+}
+.carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Text color */
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    animation: slideUp 1s ease;
+}
+.p {
+    font-size: 50px; /* Adjust font size as needed */
+    line-height: 1.6;
+    text-align: center; /* Adjust line height as needed */
+    width: 50%;
+    margin-left: 30%;
+    margin-top: 5%;
+    font-family: "Anta", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.carousel-content {
+    animation: slideUp 1s ease;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Dashboard styles */
+.Dashboard {
+   
+    padding: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.Dashboard .image {
+    float: left;
+    width: 50%;
+    height: 300px;
+}
+
+.Dashboard .image img {
+    width: 500px;
+    height: auto;
+    margin-left: 100px;
+    border-radius: 30px;
+    box-shadow: 2px 4px 5px rgba(249, 247, 247, 0.5);
+}
+
+.Dashboard .content {
+    flex: 2;
+    padding-left: 60px;
+    margin-left: 30px;
+}
+p{
+    color: #f0f0f0;
+    font-family: "Ojuju", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-size: 20px;
+  font-style: normal;
+}
+/* footer */
+.footer {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    padding: 20px 0; /* Added padding for better spacing */
+    position: relative;
+    margin-top: 150px;
+}
+
+.brand {
+    float: left;
+    width: 50%;
+    height: 50px;
+}
+.brand-line{
+    width: 100%;
+    margin-top: 120px;
+
+}
+
+.foot {
+    color: #ccc;
+    text-align: center;
+}
+
+ul {
+    padding: 0; /* Removed text-decoration */
+}
+
+h5 {
+    color: #ccc;
+    text-align: center;
+    font-size: 36px; /* Adjusted font size */
+    font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 40px; /* Adjusted font size */
+    font-family: "Anta", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+li {
+    text-align: center;
+    color: #f0f0f0;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    
+    color: white;
+}
+
+li a:hover {
+    color: rgb(100, 89, 89);
+}
+
+.footer ul li a {
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.footer ul li a:hover {
+    color: #999; /* Text color on hover */
+}
+
+
+/* Sales Input */
+.main{
+    width: 40%;
+    height: 500px;
+    background-color: rgba(226, 218, 218, 0.5);
+    margin-left: 30%;
+    margin-top: 150px;
+    border-radius: 30px;
+    
+}
+
+.sales{
+    width: 50%;
+    height: 300px;
+    margin:auto;
+    top: 20px;
+}
+.data{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid #0056b3;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+h1{
+    text-align: center;
+    color: #22085b;
+    font-family: "Anta", sans-serif; 
+    padding-top: 20px;
+}
+.button{
+    border: none;
+    background-color: greenyellow;
+    width: 100px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 100px;
+    border-radius: 5pc;
+}
+label{
+    color: #0d0b3b;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px auto;
+    font-weight: 600;
+    font-size: 18px
+}
+
+.button {
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+}
+
+.button:hover {
+    background-color: #00ff00; /* Background color on hover */
+    transform: scale(1.1); /* Scale up by 10% on hover */
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .nav ul li:last-child {
+        margin-bottom: 0;
+    }
+}
+

@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/*Navbar */
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(181, 215, 250);
+    color: black;
+    /* Text color */
+    padding: 10px 10px;
+    /* Padding around items */
+    box-shadow: 10px 7px 4px rgba(87, 73, 73, 0.698);
+    /* Box shadow for subtle depth */
+    z-index: 1000;
+    /* Ensure the navbar appears above other content */
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: black;
+}
+
+.item.logo {
+    margin-right: auto;
+}
+
+.item a {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Anta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 23px;
+    font-style: normal;
+}
+
+.item a:hover {
+    color: white;
+    /* Text color on hover */
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(228, 213, 213, 0.1);
+    max-width: 100%;
+    /* height: 100%; */
+    /* margin: 200px;
+    padding: 20px; */
+}
+
+
+/* crousal */
+
+.crousal {
+    background-color: #7cbfdc;
+    max-width: 100%;
+    height: 100%;
+    padding: 50px 60px 70px;
+}
+
+h3 {
+    color: chartreuse;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ctc {
+    margin: 0px;
+    font-size: 80px;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+span {
+    color: rgb(17, 94, 14);
+}
+
+h4 {
+    width: 100%;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.about {
+    margin-top: 0px;
+    background-color: rgb(231, 241, 243);
+}
+
+.img {
+    width: 80%;
+    padding-left: 10%;
+    height: 500px;
+}
+
+.text {
+    font-weight: bold;
+    color: black;
+    font-size: larger;
+    margin: 100px;
+}
+
+
+/* section */
+
+.sub-head {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.para {
+    font-size: 20px;
+}
+
+#right_text {
+    padding-right: 40%;
+    margin: 70px;
+}
+
+.left_img {
+    padding-left: 55%;
+    margin-top: -400px;
+    width: 35%;
+    border-radius: 10px;
+}
+
+.Anatytics {
+    padding: 30px;
+}
+
+#left_text {
+    padding-left: 40%;
+    margin: 40px;
+}
+
+.right_img {
+    padding-right: 55%;
+    margin-top: -240px;
+    width: 35%;
+    border-radius: 20px;
+}
+
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 320px;
+    background-color: rgb(19, 121, 223);
+    color: black;
+    padding: 10px;
+    /* Added padding for better spacing */
+    position: relative;
+    margin-top: 50px;
+}
+
+.brand {
+    float: left;
+    width: 25%;
+    padding-right: 10%;
+    padding-bottom: -15%;
+    height: 70px;
+}
+
+.brands {
+    float: right;
+    width: 40%;
+    height: 50px;
+    padding-bottom: -15%;
+}
+
+.brand-line {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.foot {
+    color: #ccc;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    /* Removed text-decoration */
+}
+
+.footer h5 {
+    color: #060505;
+    text-align: center;
+    font-size: 36px;
+    /* Adjusted font size */
+    font-family: "Anta", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    /* Adjusted font size */
+    font-family: "Anta", sans-serif;
+    font-weight: 600;
+    padding-right: 1%;
+}
+
+li {
+    font-weight: 900;
+    text-align: center;
+    color: #0d0b0b;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(10, 8, 8);
+}
+
+li a:hover {
+    color: rgb(100, 89, 89);
+}

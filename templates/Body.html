@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecasting flow</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style_1.css')}}">
+    
+</head>
+<body>
+   <header id="header"></header>
+
+    <!-- Content goes here -->
+    <div class="carousel">
+        <h3 class="domain">ForecastingFlow</h3>
+        <div class="carousel-content">
+            <p class="p">"Empowering Businesses with Precision" <br>Your Key to Future Sales Success <br>
+            </p>
+          <a href="{{url_for('upload_form')}}">  <input type="button" value="Let's Forecast" style="width: 300px; height:60px; font-size:30px; border-radius:100px; font-family: 'Anta', sans-serif;"></a>
+        </div>
+    </div>
+    
+
+    <!-- section-->
+    <h1 class="h1">IMPACT & BENEFITS</h1>
+    <div class="Dashboard">
+        
+        <div class="image"><img src="https://st5.depositphotos.com/22341038/66390/i/450/depositphotos_663900754-stock-photo-concept-risk-risk-life-business.jpg" alt="" class="img"></div>
+        <div class="content"> <!-- Corrected class name -->
+            <h2>REDUCES RISKS</h2>
+           <span> <p>Knowing what’s happened previously and comparing it to what’s happening currently allows you to see trends. If these trends are consistent, you’ll have a map for what is likely to occur in a year, five years, or more.
+
+                If they’re unfavorable, you’ll have the opportunity to avoid making the same mistakes.
+                
+                Reducing risks doesn’t come from being right. It’s about mastering your business’ inputs … to better control its outputs.</p></span></div>
+    </div>
+    <div class="Dashboard"> 
+        <div class="content"> <!-- Corrected class name -->
+            <h2>MEET CUSTOMER DEMANDS</h2>
+            <p>
+            The value of customer data cannot be overstated. Information on purchases and engagement should unlock and directly shape your DTC marketing plan:
+            
+           <br> Launching campaigns
+           <br> Featuring products in email marketing
+           <br> Crafting ad creative throughout your funnel</p></div>
+        <div class="image"><img src="https://answerfirst.com/wp-content/uploads/2018/03/customers-needs-and-wants.jpeg" alt="" class="img"></div>
+    </div>
+    <div class="Dashboard">
+        <div class="image"><img src="https://media.licdn.com/dms/image/D4D12AQHv0t_FsaiaTg/article-cover_image-shrink_600_2000/0/1686296351783?e=2147483647&v=beta&t=g8JlhqiDOdKmAmX6Rz8pdNcRVpbktQ7LpTLjHsTovYs" alt="" class="img"></div>
+        <div class="content"> <!-- Corrected class name -->
+            <h2> PRICING STRATEGY</h2>
+           <span> <p> Owners and operators often have a codependent relationship with pricing. We treat it as sacred and fixed when it’s actually open and elastic.
+            
+            For example, you may have a best-selling product that does poorly during the summer. To keep inventory levels healthy, most retailers decease order volume from suppliers. Instead, could lowering the price off set the off-season?
+            
+            Conversely, that same product may sell out during peak moments. Rather than increasing stock levels, the right answer could be to charge more.</p></span></div>
+    </div>
+    <div class="Dashboard">
+    <div class="content"> <!-- Corrected class name -->
+        <h2>SEASONALITY</h2>
+        <p>Two areas where seasonality has the greatest impact are inventory management and supply chain. 
+
+During inventory planning, forecasts are used to determine customer demand for existing SKUs, new products, and even demand by location — “geographical demand” for physical or omni-channel retailers.
+
+Some high-traffic periods are obvious, like Black Friday. Others are hidden within the past, waiting to be revealed and operationalized.
+        </p></div>
+    <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCPnomkO59h7xqhV_oTJRM30ejuHg_OkHgug&usqp=CAU" alt="" class="img"></div>
+</div>
+    <footer id="footer"></footer>
+
+    
+</body>
+<script src="{{ url_for('static', filename = 'script.js')}}">
+    
+</script>
+</html>

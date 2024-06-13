@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecasting Flow</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style_1.css')}}">
+</head>
+<body>
+    <header id="header"></header>
+
+    <div class="container_1">
+        <div class="img">
+            <img src="https://hptpedia.hyper-trade.com/content/images/2023/08/Sales-forecast.jpg" alt="image">
+        </div>
+        <div>
+            <h1 class="h1">Upload a File</h1>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" class="file"><br>
+                <input type="submit" value="Upload" class="button" style="margin-left:200px">
+            </form>
+            <a href="/report"><button class="button"style="margin-left:200px">Show Report</button></a>
+        </div>
+    </div>
+<div class="result">
+
+    <img src="data:image/png;base64,{{ plot_url }}" alt="Plot" class="plot">
+    <img style="height:900px" src="data:image/png;base64,{{ plot_url4 }}" alt="Plot" class="plot">
+    <img src="data:image/png;base64,{{ plot_url1 }}" alt="Correlation" class="plot">
+    <img src="data:image/png;base64,{{ plot_url2 }}" alt="Plot" class="plot">
+    <img src="data:image/png;base64,{{ plot_url3 }}" alt="Plot" class="plot">
+
+</div>
+    <footer id="footer"></footer>
+</body>
+<script src="{{ url_for('static', filename = 'script.js')}}"></script>
+</html>

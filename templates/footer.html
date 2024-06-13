@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style_1.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <footer id="footer" class="footer">
+        <h5>Forecast flow.com</h5>
+        <div class="brand">
+            
+            <h2 style="color:black; font-size: 20px; padding-left: 40%;">Quick Links</h2>
+            <ul>
+                <li><a href="{{url_for('index')}}">Home</a></li>
+                <li><a href="{{url_for('sales_input')}}">Sales Input</a></li>
+                <li><a href="{{url_for('dashboard')}}">About</a></li>
+                <li><a href="{{url_for('upload_form')}}">Forecast</a></li>
+            </ul>
+        </div>
+        <div class="brands">
+            <!-- <h2 style="color:black; font-size: 20px; padding-right: -10%;">Contact Us</h2> -->
+            <ul>
+                <li>Email: forecastingFlow@.com</lmaili>
+                <li>Phone: +1234567890</li>
+                <li>Address: 123 Street, City, Country</li>
+            </ul>
+        </div>
+        <div class="brand-line">
+            <ul>
+                <li>&copy;  www.forecasting flow.com | All rights reserved</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
